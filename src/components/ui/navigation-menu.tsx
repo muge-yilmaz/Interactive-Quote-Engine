@@ -78,7 +78,10 @@ function NavigationMenuContent({ className, ...props }) {
   );
 }
 
-function NavigationMenuViewport({ className, ...props }) {
+function NavigationMenuViewport({
+  className,
+  ...props
+}: React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Viewport>) {
   return (
     <div
       className={cn(
